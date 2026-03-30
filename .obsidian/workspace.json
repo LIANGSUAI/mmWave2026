@@ -74,13 +74,11 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ff9758eeb5c41cb0",
@@ -178,7 +176,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -196,11 +194,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8d0a9ce7e60863a9",
+  "active": "7ef85a5bfbafcb27",
   "lastOpenFiles": [
     "Pasted image 20260330145122.png",
-    "Pasted image 20260330145102.png",
     "RadMamba.md",
+    "Pasted image 20260330145102.png",
     "欢迎.md"
   ]
 }
