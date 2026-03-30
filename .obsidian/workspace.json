@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "RadMamba.md",
+                "file": "RadHAR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "RadMamba 的反向链接列表"
+              "title": "RadHAR 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "RadMamba.md",
+                "file": "RadHAR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "RadMamba 的出链列表"
+              "title": "RadHAR 的出链列表"
             }
           },
           {
@@ -176,7 +176,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -197,6 +197,7 @@
   "active": "8d0a9ce7e60863a9",
   "lastOpenFiles": [
     "RadMamba.md",
+    "毫米波 related.md",
     "RadHAR.md",
     "Pasted image 20260330145122.png",
     "Pasted image 20260330145102.png",
