@@ -5,6 +5,7 @@
 
 ## 2. 前沿与轻量化优化 (SOTA)
 * [[RadMamba]]：针对 LSTM 和 Transformer 的长序列计算瓶颈，引入 Mamba 状态空间模型，实现 $O(N)$ 复杂度，专攻边缘设备部署。
+* 
 
 # 创新研究方向[[mamba]]
 
