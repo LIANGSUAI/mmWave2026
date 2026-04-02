@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "RadMamba.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "RadMamba"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名.md",
+                "file": "RadMamba.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "RadMamba 的大纲"
             }
           },
           {
@@ -194,13 +194,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e46c2fc5398dddf3",
+  "active": "cd97b8b1d35a0047",
   "lastOpenFiles": [
-    "RadMamba.md",
-    "未命名.md",
-    "毫米波 related.md",
+    "Star Graph + DDGNN.md",
     "RadHAR.md",
     "mamba.md",
+    "RadMamba.md",
+    "毫米波 related.md",
     "1.md",
     "image/Pasted image 20260330214313.png",
     "image/RadMamba架构图.png",
