@@ -30,7 +30,7 @@ IEEE Transactions on Mobile Computing (IEEE TMC)
   * 时间特征提取：2层 Bi-LSTM 。
 * **Output (输出):** 13 类动作的分类概率分布（经过 Softmax 层）。
 
-![[Pasted image 20260407200423.png]]
+![[Pasted image 20260407200423.png|464]]
 
 ### 四、 核心技术与算法原理详解
 
@@ -40,6 +40,7 @@ IEEE Transactions on Mobile Computing (IEEE TMC)
 2. **DBSCAN 密度聚类：** 经过初步过滤后，采用 DBSCAN 算法对剩余点云进行聚类，并强制保留包含点数最多的那个“最大簇（Largest Cluster）”，从而最大程度滤除散落在人体周围的零星环境噪点。
 
 #### 模块二：图生成与星型图构建 (Graph Generation)
+![[Pasted image 20260407202721.png|451]]
 该模块旨在解决“如何用图结构优雅地表征变长无序点云”的问题，输出星型图序列 $G$。
 1. **引入静态锚点：** 预处理后的点云全是“动点”，为了建立空间参考系，作者在每一帧中人为植入一个常量静态中心点 $p_c$（如坐标原点 $(0, 1, 0)$）。
 2. **有向星型图 (DStar) 连线：** 将当前帧所有的雷达动点 $p_i$ 单向连接到中心静点 $p_c$ 上。
