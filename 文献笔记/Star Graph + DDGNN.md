@@ -30,6 +30,7 @@ IEEE Transactions on Mobile Computing (IEEE TMC)
   * 时间特征提取：2层 Bi-LSTM 。
 * **Output (输出):** 13 类动作的分类概率分布（经过 Softmax 层）。
 
+![[Pasted image 20260407200423.png]]
 ### 四、 核心技术与算法原理详解
 
 **1. 星型图的构建机理 (Star Graph Construction)**
