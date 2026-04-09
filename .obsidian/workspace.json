@@ -35,8 +35,7 @@
               "title": "RadMamba"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文献笔记/RadMamba.md",
+                "file": "文献笔记/Star Graph + DDGNN.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "RadMamba 的大纲"
+              "title": "Star Graph + DDGNN 的大纲"
             }
           },
           {
@@ -209,10 +208,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f5ef520c4debc83a",
+  "active": "e46c2fc5398dddf3",
   "lastOpenFiles": [
-    "文献笔记/Star Graph + DDGNN.md",
     "文献笔记/RadMamba.md",
+    "文献笔记/Star Graph + DDGNN.md",
     "image/Pasted image 20260408173233.png",
     "image/Pasted image 20260408172756.png",
     "image/Pasted image 20260407202721.png",
