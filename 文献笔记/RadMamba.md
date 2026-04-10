@@ -4,7 +4,7 @@ RadMamba: Efficient Human Activity Recognition Through a Radar-Based Micro-Doppl
 ### 标题翻译
 基于雷达微多普勒特征的 Mamba 状态空间模型实现高效人体活动识别
 
-_IEEE Transactions on Radar Systems_ (IEEE T-RS)
+_IEEE Transactions on Radar Systems_ (IEEE T-RS) 2025.12
 
 ###  **研究痛点 (Motivation):** 
 - **传统做法：** 处理雷达信号（微多普勒频谱或点云）通常用 CNN、LSTM 或 Transformer。（例如经典的基线架构 [[RadHAR]]）或 Transformer。
