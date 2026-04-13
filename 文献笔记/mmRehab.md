@@ -1,4 +1,8 @@
-
+---
+tags:
+  - 毫米波
+date: "4.13"
+---
 
 # 📑 **Sensing Life in Stillness: Unified Dynamic and Static Human Mesh Reconstruction with mmWave Radar**
 中文翻译：静中察生：基于毫米波雷达的统一动态与静态人体网格重建
