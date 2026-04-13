@@ -1,6 +1,7 @@
 
 
-📑 **[论文全名] Sensing Life in Stillness: Unified Dynamic and Static Human Mesh Reconstruction with mmWave Radar**
+# 📑 **Sensing Life in Stillness: Unified Dynamic and Static Human Mesh Reconstruction with mmWave Radar**
+中文翻译：静中察生：基于毫米波雷达的统一动态与静态人体网格重建
 
 ### 1. 📇 元数据 (Metadata)
 
@@ -11,11 +12,11 @@
 - **原文链接：** [https://doi.org/10.1145/3790117](https://doi.org/10.1145/3790117)
 - **相关代码/数据集：** 
 
-### 2. 💡 一句话总结 (One-Sentence Summary)
+### 2. Summary
 
 本文提出了 mmRehab 系统，通过从被传统算法丢弃的静态杂波中提取人体微动（呼吸、心跳等）特征，并结合视觉深度图进行跨模态几何知识蒸馏，实现了毫米波雷达在动态和完全静止状态下统一的高精度 3D 人体网格重建 。
 
-### 3. 🎯 研究痛点与动机 (Motivation & Gap)
+### 3. 研究痛点与动机
 
 - **现有研究的局限性：** 视觉和穿戴设备存在隐私泄露和佩戴依从性差的痛点 。而现有的射频（RF）感知严重依赖“运动”产生的多普勒频移，当用户处于静止康复姿态（如臀桥、单腿站立）时，系统会直接失效 。这是因为传统的静态杂波滤除（Static Clutter Removal, SCR）算法在过滤墙壁、家具反射的同时，把人体因呼吸、心跳引起的微弱多普勒信号也一并抹除了 。
 - **本文的切入点：** 作者转变了雷达感知的范式：静止不是无信号，而是“寂静中的生命力”。他们将零多普勒频段中的微动视为编码生理状态和姿态稳定性的核心信息，填补了雷达在准静态康复监测中的技术空白 。
@@ -32,6 +33,9 @@
     
     - **Input：** 从原始 IF 信号中提取的动态空间运动图（Range-Azimuth, Range-Elevation, Range-Doppler）和静态特征谱（Static Range-Azimuth, Static Range-Elevation, Range-MDoppler） 。
     - **Output：** 预测 SMPL 模型的 82 维参数（平移、姿态、体型），进而解码出包含 6890 个顶点和 24 个关节的 3D 人体网格 。
+
+### 阅读过程
+
 
 ### 5. 📊 实验与结果 (Experiments & Results)
 
