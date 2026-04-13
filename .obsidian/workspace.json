@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文献笔记/RadMamba.md",
+                "file": "文献笔记/模板.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RadMamba"
+              "title": "模板"
             }
           },
           {
@@ -199,13 +199,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文献笔记/RadMamba.md",
+                "file": "文献笔记/模板.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "RadMamba 的大纲"
+              "title": "模板 的大纲"
             }
           },
           {
@@ -239,10 +239,11 @@
   },
   "active": "910319d87b7489ea",
   "lastOpenFiles": [
-    "文献笔记/Star Graph + DDGNN.md",
-    "文献笔记/RadMamba.md",
-    "文献笔记/RadHAR.md",
     "文献笔记/mmRehab.md",
+    "文献笔记/RadMamba.md",
+    "文献笔记/模板.md",
+    "文献笔记/Star Graph + DDGNN.md",
+    "文献笔记/RadHAR.md",
     "模版/实验笔记模版.md",
     "模版",
     "未命名.md",
