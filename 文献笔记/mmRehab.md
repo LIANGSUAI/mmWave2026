@@ -9,7 +9,7 @@
 - **发表年份：** 2026 年 3 月
 - **影响因子/分区：** 普适计算领域顶级期刊/会议 (CCF-A 类)
 - **原文链接：** [https://doi.org/10.1145/3790117](https://doi.org/10.1145/3790117)
-- **相关代码/数据集：** [https://github.com/leenchen0/mmRehab](https://www.google.com/search?q=https://github.com/leenchen0/mmRehab)
+- **相关代码/数据集：** 
 
 ### 2. 💡 一句话总结 (One-Sentence Summary)
 
