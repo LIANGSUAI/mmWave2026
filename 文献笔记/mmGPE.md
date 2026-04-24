@@ -3,13 +3,9 @@
 ### 📇 元数据 (Metadata)
 
 - **论文全称：** Towards generalized mmwave-based human pose estimation through signal augmentation
-    
 - **作者团队：** Hongfei Xue, Lu Su 等 (雪城大学 / 普渡大学)
-    
 - **期刊/会议：** MobiCom 2023 (网络与移动计算绝对顶会)
-    
 - **核心标签：** #毫米波雷达 #姿态估计/HAR #数据增强 #零样本泛化
-    
 
 ### 2. 💡 一句话总结 (One-Sentence Summary)
 
@@ -18,9 +14,7 @@
 ### 3. 🎯 研究痛点与动机 (Motivation & Gap)
 
 - **痛点：** 现有的基于毫米波雷达的 3D 人体姿态估计模型严重依赖于训练数据分布。由于收集全量真实雷达数据的成本极高，模型在遇到未见过的新动作（Unseen Activities）时，泛化能力（Generalization）会急剧下降。
-    
 - **思路：** 既然真数据难采，那就用代码“造”假数据。只要合成的雷达图谱足够逼真，网络就能在训练室里提前“见识”过各种千奇百怪的动作。
-    
 
 ### 4. ⚙️ 核心创新与方法论 (Core Methodology)
 
