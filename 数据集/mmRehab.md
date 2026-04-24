@@ -1,4 +1,4 @@
-# (动静统一 3D 姿态与微动)
+# (动静统一 3D 姿态与微动)[[文献笔记/mmRehab|mmRehab]]
 
 ### 基本参数
 
@@ -23,5 +23,5 @@
 
 ### 资源链接
 
-- **GitHub 仓库 (开源代码与数据信息):** [https://github.com/leenchen0/mmRehab](https://www.google.com/search?q=https://github.com/leenchen0/mmRehab)
+- **GitHub 仓库 (开源代码与数据信息):** [https://github.com/leenchen0/mmRehab]（没找到）
 - **论文原文 (IMWUT 2026):** [https://doi.org/10.1145/3790117](https://doi.org/10.1145/3790117)

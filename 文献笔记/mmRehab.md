@@ -76,6 +76,7 @@ SMPL方法
 82 个参数----系统通过线性混合蒙皮算法（Linear Blend Skinning）--->包含 6890 个顶点的高保真 3D 网格。
 
 
+
 ### 5. 📊 实验与结果 (Experiments & Results)
 
 - **使用的数据集：**
