@@ -22,3 +22,4 @@
 
 ## 资源链接
 - **相关论文**: *Continuous human activity classification from FMCW radar with bi-LSTM networks* (IEEE Sensors J., 2020)
+- https://researchdata.gla.ac.uk/848/
