@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据集/emo.md",
+                "file": "文献笔记/mmRehab.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "emo"
+              "title": "mmRehab"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "数据集/emo.md",
+                "file": "文献笔记/mmRehab.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "emo 的大纲"
+              "title": "mmRehab 的大纲"
             }
           },
           {
@@ -194,11 +194,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd97b8b1d35a0047",
+  "active": "910319d87b7489ea",
   "lastOpenFiles": [
+    "数据集/emo.md",
     "实验记录",
     "文献笔记/mmEmotion.md",
-    "数据集/emo.md",
     "文献笔记/mmRehab.md",
     "文献笔记/RadHAR.md",
     "文献笔记/RadMamba.md",
