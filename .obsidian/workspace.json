@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文献笔记/Chronos.md",
+                "file": "00_Inbox/test-claude-paper-workflow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chronos"
+              "title": "test-claude-paper-workflow"
             }
           }
         ]
@@ -196,6 +196,7 @@
   },
   "active": "910319d87b7489ea",
   "lastOpenFiles": [
+    "文献笔记/Chronos.md",
     "文献笔记/mmEmotion.md",
     "文献笔记/mmRehab.md",
     "数据集/emo.md",
@@ -206,7 +207,6 @@
     "文献笔记/mmGPE.md",
     "数据集/UoG20.md",
     "image/Pasted image 20260425001401.png",
-    "文献笔记/Chronos.md",
     "文献笔记/Time-LLM.md",
     "数据集/mmRehab.md",
     "毫米波数据集整理.md",
