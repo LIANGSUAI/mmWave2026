@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Inbox/test-claude-paper-workflow.md",
+                "file": "01_Papers/ImmCOGNITO-identity-obfuscation-mmwave-gesture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "test-claude-paper-workflow"
+              "title": "ImmCOGNITO-identity-obfuscation-mmwave-gesture"
             }
           }
         ]
@@ -194,8 +194,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd97b8b1d35a0047",
+  "active": "910319d87b7489ea",
   "lastOpenFiles": [
+    "00_Inbox/test-claude-paper-workflow.md",
     "01_Papers/ImmCOGNITO-identity-obfuscation-mmwave-gesture.md",
     "01_Papers/ImmCOGNITO-identity-obfuscation-mmwave-gesture.md.tmp.88612.19ad32446387",
     "文献笔记/Chronos.md",
@@ -236,7 +237,6 @@
     "文献笔记",
     "1.md",
     "image/RadMamba架构图.png",
-    "image",
-    "欢迎.md"
+    "image"
   ]
 }
