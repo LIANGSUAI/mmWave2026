@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文献笔记/mmEmotion.md",
+                "file": "文献笔记/Chronos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mmEmotion"
+              "title": "Chronos"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文献笔记/mmEmotion.md",
+                "file": "文献笔记/Chronos.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "mmEmotion 的大纲"
+              "title": "Chronos 的大纲"
             }
           },
           {
@@ -176,7 +176,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -194,12 +194,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd97b8b1d35a0047",
+  "active": "910319d87b7489ea",
   "lastOpenFiles": [
+    "文献笔记/mmEmotion.md",
     "文献笔记/mmRehab.md",
     "数据集/emo.md",
     "实验记录",
-    "文献笔记/mmEmotion.md",
     "文献笔记/RadHAR.md",
     "文献笔记/RadMamba.md",
     "文献笔记/Star Graph + DDGNN.md",
