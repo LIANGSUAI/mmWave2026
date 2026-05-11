@@ -1,1 +1,6 @@
+.obsidian/
+.trash/
+.DS_Store
+.idea  
 .obsidian  
+.vscode
