@@ -194,8 +194,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "910319d87b7489ea",
+  "active": "cd97b8b1d35a0047",
   "lastOpenFiles": [
+    "数据集/MiliPoint.md",
+    "数据集/M4Human.md",
     "文献笔记/mmGPE.md",
     "文献笔记/Multimodal CNN Fusion.md",
     "文献笔记/mmRehab.md",
@@ -224,9 +226,7 @@
     "01_Papers",
     "实验记录",
     "文献笔记/RadHAR.md",
-    "文献笔记/Star Graph + DDGNN.md",
     "image/Pasted image 20260425001401.png",
-    "文献笔记/Time-LLM.md",
     "image/Pasted image 20260423160722.png",
     "image/Pasted image 20260409214826.png",
     "image/Pasted image 20260415115826.png",
