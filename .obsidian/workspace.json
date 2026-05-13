@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文献笔记/Multimodal CNN Fusion.md",
+                "file": "毫米波 related.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Multimodal CNN Fusion"
+              "title": "毫米波 related"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文献笔记/Multimodal CNN Fusion.md",
+                "file": "毫米波 related.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Multimodal CNN Fusion 的大纲"
+              "title": "毫米波 related 的大纲"
             }
           },
           {
@@ -196,15 +196,15 @@
   },
   "active": "910319d87b7489ea",
   "lastOpenFiles": [
-    "文献笔记/MiliPoint.md",
+    "文献笔记/IFDNet.md",
     "文献笔记/Chronos.md",
     "文献笔记/Cardiac State-Space FMCW.md",
+    "文献笔记/MiliPoint.md",
+    "文献笔记/Multimodal CNN Fusion.md",
     "文献笔记/M4Human.md",
     "文献笔记/mmEmotion.md",
-    "文献笔记/IFDNet.md",
     "数据集/M4Human.md",
     "数据集/MiliPoint.md",
-    "文献笔记/Multimodal CNN Fusion.md",
     "文献笔记/mmGPE.md",
     "文献笔记/mmRehab.md",
     "文献笔记/RadMamba.md",
