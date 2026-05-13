@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文献笔记/mmEmotion.md",
+                "file": "文献笔记/Multimodal CNN Fusion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mmEmotion"
+              "title": "Multimodal CNN Fusion"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文献笔记/mmEmotion.md",
+                "file": "文献笔记/Multimodal CNN Fusion.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "mmEmotion 的大纲"
+              "title": "Multimodal CNN Fusion 的大纲"
             }
           },
           {
@@ -196,16 +196,17 @@
   },
   "active": "910319d87b7489ea",
   "lastOpenFiles": [
-    "文献笔记/IFDNet.md",
+    "文献笔记/MiliPoint.md",
+    "文献笔记/Chronos.md",
+    "文献笔记/Cardiac State-Space FMCW.md",
     "文献笔记/M4Human.md",
+    "文献笔记/mmEmotion.md",
+    "文献笔记/IFDNet.md",
     "数据集/M4Human.md",
     "数据集/MiliPoint.md",
     "文献笔记/Multimodal CNN Fusion.md",
     "文献笔记/mmGPE.md",
     "文献笔记/mmRehab.md",
-    "文献笔记/MiliPoint.md",
-    "文献笔记/Chronos.md",
-    "文献笔记/Cardiac State-Space FMCW.md",
     "文献笔记/RadMamba.md",
     "数据集/CI4R.md",
     "01_Papers/ImmCOGNITO-identity-obfuscation-mmwave-gesture.md",
@@ -217,7 +218,6 @@
     "数据集/mmFall.md",
     "数据集/mmRehab.md",
     "模版/实验笔记模版.md",
-    "文献笔记/mmEmotion.md",
     "templates/paper-note-template.md",
     "templates",
     "CLAUDE.md",
