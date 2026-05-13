@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据集/M4Human.md",
+                "file": "文献笔记/IFDNet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "M4Human"
+              "title": "IFDNet"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "数据集/M4Human.md",
+                "file": "文献笔记/IFDNet.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "M4Human 的大纲"
+              "title": "IFDNet 的大纲"
             }
           },
           {
@@ -196,9 +196,9 @@
   },
   "active": "910319d87b7489ea",
   "lastOpenFiles": [
-    "数据集/MiliPoint.md",
-    "数据集/M4Human.md",
     "文献笔记/M4Human.md",
+    "数据集/M4Human.md",
+    "数据集/MiliPoint.md",
     "文献笔记/Multimodal CNN Fusion.md",
     "文献笔记/mmGPE.md",
     "文献笔记/mmRehab.md",
