@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "毫米波 related.md",
+                "file": "文献笔记/IFDNet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "毫米波 related"
+              "title": "IFDNet"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "毫米波 related.md",
+                "file": "文献笔记/IFDNet.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "毫米波 related 的大纲"
+              "title": "IFDNet 的大纲"
             }
           },
           {
@@ -196,14 +196,20 @@
   },
   "active": "910319d87b7489ea",
   "lastOpenFiles": [
+    "文献笔记/M4Human.md",
+    "数据集/M4Human.md",
+    "毫米波数据集整理.md",
+    "跨模态重编程.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "mamba.md",
+    "毫米波 related.md",
     "文献笔记/IFDNet.md",
     "文献笔记/Chronos.md",
     "文献笔记/Cardiac State-Space FMCW.md",
     "文献笔记/MiliPoint.md",
     "文献笔记/Multimodal CNN Fusion.md",
-    "文献笔记/M4Human.md",
     "文献笔记/mmEmotion.md",
-    "数据集/M4Human.md",
     "数据集/MiliPoint.md",
     "文献笔记/mmGPE.md",
     "文献笔记/mmRehab.md",
@@ -216,16 +222,10 @@
     "数据集/AMASS.md",
     "数据集/emo.md",
     "数据集/mmFall.md",
-    "数据集/mmRehab.md",
-    "模版/实验笔记模版.md",
-    "templates/paper-note-template.md",
     "templates",
-    "CLAUDE.md",
-    "00_Inbox/test-claude-paper-workflow.md",
     "00_Inbox",
     "01_Papers",
     "实验记录",
-    "文献笔记/RadHAR.md",
     "image/Pasted image 20260425001401.png",
     "image/Pasted image 20260423160722.png",
     "image/Pasted image 20260409214826.png",
