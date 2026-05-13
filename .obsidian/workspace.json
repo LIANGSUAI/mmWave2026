@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文献笔记/IFDNet.md",
+                "file": "文献笔记/mmEmotion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IFDNet"
+              "title": "mmEmotion"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文献笔记/IFDNet.md",
+                "file": "文献笔记/mmEmotion.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "IFDNet 的大纲"
+              "title": "mmEmotion 的大纲"
             }
           },
           {
@@ -196,6 +196,7 @@
   },
   "active": "910319d87b7489ea",
   "lastOpenFiles": [
+    "文献笔记/IFDNet.md",
     "文献笔记/M4Human.md",
     "数据集/M4Human.md",
     "数据集/MiliPoint.md",
@@ -203,7 +204,6 @@
     "文献笔记/mmGPE.md",
     "文献笔记/mmRehab.md",
     "文献笔记/MiliPoint.md",
-    "文献笔记/IFDNet.md",
     "文献笔记/Chronos.md",
     "文献笔记/Cardiac State-Space FMCW.md",
     "文献笔记/RadMamba.md",
