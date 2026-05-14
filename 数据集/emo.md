@@ -33,5 +33,63 @@
   - **GSR (24维)**: 提取了中位数、均值、极值、归一化范围、一阶/二阶导数以及 0-2Hz 的 PSD 特征。
 
 ## 💻 开源与复现代码
-- **代码仓库**: GitHub (`CJ20Project/mmWaveEmoRecDataset`)
-- **支持语言**: Python (用于数据采集与实验控制) 和 MATLAB/Python (用于信号处理与特征提取)。
+- **论文原始代码/数据相关仓库**: GitHub (`CJ20Project/mmWaveEmoRecDataset`，待进一步核验具体可用性)
+- **我的复现仓库**: https://github.com/LIANGSUAI/mmemo
+- **支持语言**: Python 为主，复现仓库将原论文中 MATLAB/Python 信号处理与特征提取逻辑整理为一键 pipeline。
+
+### 复现仓库结构
+
+```text
+mmemo/
+├── run_pipeline.py           # 主入口，一键运行或分步运行
+├── requirements.txt          # Python 依赖
+├── DEPLOY.md                 # 部署与复现说明
+├── src/
+│   ├── config.py             # 路径、雷达参数、窗口参数
+│   ├── mmwave_processor.py   # mmWave 信号处理
+│   ├── ppg_gsr_processor.py  # PPG/GSR 信号处理
+│   ├── feature_utils.py      # 特征提取工具
+│   └── extract_features.py   # 特征提取主脚本
+└── results/                  # 本地分类结果
+```
+
+### 一键运行方式
+
+```bash
+pip install -r requirements.txt
+# 修改 src/config.py 中 RAW_DATA_DIR 为 01_raw_data 路径
+python -u run_pipeline.py
+```
+
+也可以分步运行：
+
+```bash
+python run_pipeline.py --step process
+python run_pipeline.py --step features
+python run_pipeline.py --step classify
+python run_pipeline.py --step summary
+```
+
+### 复现参数
+
+- **雷达参数**: 3 Tx、4 Rx、256 ADC samples、ADC 采样率 5.12 MHz、frame periodicity 10 ms、起始频率 60 GHz、chirp slope 66.590 THz/s。
+- **窗口策略**: 取每段视频最后 60 秒；5 秒窗口；无重叠。
+- **参与者与片段**: `P01-P15`，clip `00-18`，其中 `00` 为 baseline。
+- **标签规则**: SAM 分数 `>5` 为 High，`<5` 为 Low，`=5` 不参与二分类。
+- **分类器**: SVM RBF，GridSearchCV 调参，输出 Accuracy、Balanced Accuracy、F1。
+
+### 复现结果
+
+| Signal | Valence Acc | Arousal Acc | Dominance Acc |
+|---|---:|---:|---:|
+| PPG | 64.8% | 67.2% | 65.1% |
+| mmWave | 59.5% | 67.1% | 66.4% |
+| GSR | 64.9% | 67.8% | 67.8% |
+
+与论文 Table 7 差异在 ±3% 以内，说明数据预处理、特征提取和 SVM 分类流程基本复现成功。
+
+### 使用注意
+
+- mmWave 原始信号处理最耗时，仓库说明约 30-60 分钟，且单个文件可能需要数 GB 内存，建议至少 16 GB 内存。
+- HHT 特征依赖 `PyEMD`；若安装困难，复现代码会自动降级为带通滤波近似。
+- 当前复现主要对齐论文 Table 7，不代表已经完成跨被试或跨会话的严格泛化验证。

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文献笔记/Cardiac State-Space FMCW.md",
+                "file": "文献笔记/mmEmotion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cardiac State-Space FMCW"
+              "title": "mmEmotion"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文献笔记/Cardiac State-Space FMCW.md",
+                "file": "文献笔记/mmEmotion.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Cardiac State-Space FMCW 的大纲"
+              "title": "mmEmotion 的大纲"
             }
           },
           {
@@ -196,6 +196,8 @@
   },
   "active": "910319d87b7489ea",
   "lastOpenFiles": [
+    "文献笔记/mmRehab.md",
+    "文献笔记/Cardiac State-Space FMCW.md",
     "文献笔记/IFDNet.md",
     "文献笔记/M4Human.md",
     "数据集/M4Human.md",
@@ -206,13 +208,11 @@
     "mamba.md",
     "毫米波 related.md",
     "文献笔记/Chronos.md",
-    "文献笔记/Cardiac State-Space FMCW.md",
     "文献笔记/MiliPoint.md",
     "文献笔记/Multimodal CNN Fusion.md",
     "文献笔记/mmEmotion.md",
     "数据集/MiliPoint.md",
     "文献笔记/mmGPE.md",
-    "文献笔记/mmRehab.md",
     "文献笔记/RadMamba.md",
     "数据集/CI4R.md",
     "01_Papers/ImmCOGNITO-identity-obfuscation-mmwave-gesture.md",
