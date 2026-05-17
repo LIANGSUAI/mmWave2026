@@ -70,6 +70,21 @@
 4. **讨论 scaling law。**
    不只是报告 SOTA，而是分析数据量增加与模型性能之间的关系。
 
+
+## todo：
+
+ **输入到底是什么**  
+它的 raw radar / 4D radar representation 是怎么组织成模型输入的。
+
+**标签怎么来**  
+3D occupancy、semantic segmentation 的监督信号来自哪里，是人工标注、相机/LiDAR 对齐，还是自动生成。
+
+**GRT 大概怎么建**  
+不用抠每一层，但要知道 tokenization、Transformer backbone、输出 head 的整体流程。
+
+**为什么 raw radar 更好**  
+看它怎么证明 raw data 比 point cloud / heatmap 等 lossy representation 好，尤其是那个“相当于 10× 数据量”的结论。
+
 ### 与我已读论文的关系
 
 - [[RadMamba]]：RadMamba 关注微多普勒时频图上的高效长序列建模，目标偏轻量 HAR；本文更上游，直接从 raw radar 出发做 foundation model。
