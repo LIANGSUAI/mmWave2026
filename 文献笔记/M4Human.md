@@ -2,7 +2,6 @@
 
 ### 📇 元数据 (Metadata)
 
-- **重点标记：** ⭐ 用户指定重点阅读论文
 - **论文全称：** M4Human: A Large-Scale Multimodal mmWave Radar Benchmark for Human Mesh Reconstruction
 - **标题翻译：** M4Human：面向人体网格重建的大规模多模态毫米波雷达基准
 - **作者：** Junqiao Fan, Yunjiao Zhou, Yizhuo Yang, Xinyuan Cui, Jiarui Zhang, Lihua Xie, Jianfei Yang, Chris Xiaoxuan Lu, Fangqiang Ding

@@ -10,7 +10,6 @@
 - **页码：** 24655-24665
 - **DOI / arXiv：** 10.48550/arXiv.2509.12482 / arXiv:2509.12482
 - **URL：** https://openaccess.thecvf.com/content/ICCV2025/html/Huang_Towards_Foundational_Models_for_Single-Chip_Radar_ICCV_2025_paper.html
-- **阅读状态：** 初读笔记，待读全文精读
 
 ### 一句话总结
 
