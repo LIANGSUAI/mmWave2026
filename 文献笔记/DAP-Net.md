@@ -10,6 +10,7 @@
 - **发表时间：** 2026-05-10
 - **arXiv：** 2605.09604
 - **代码/数据集：** https://github.com/jolin830/DAP-Net
+- **数据获取状态：** GitHub 未直接提供 processed UniMM-HAR 下载；README 写明 processed dataset 仅限学术研究邮件申请，联系人 `jylin25@stu.pku.edu.cn`。若不申请处理后数据，需要自行下载 RadHAR、mRI、MM-Fi 并运行预处理脚本。
 - **阅读状态：** 初读笔记，值得后续结合 [[Star Graph + DDGNN]]、[[MiliPoint]] 精读方法和数据集部分
 
 ### 一句话总结
@@ -52,6 +53,26 @@ UniMM-HAR 是本文的重要贡献之一。它不是从零采集，而是统一�
 - **帧数：** 约 1.29M frames。
 - **输入标准化：** `[T, P, C] = [32, 64, 5]`。
 - **通道：** `x, y, z, Doppler, intensity`。
+
+### 数据获取与复现门槛
+
+作者 GitHub 仓库目前没有直接放出 processed UniMM-HAR 文件。README 中说明：
+
+- processed UniMM-HAR dataset 目前仅限学术研究邮件申请。
+- 申请邮箱：`jylin25@stu.pku.edu.cn`。
+- 邮件需要包含姓名、机构/组织、国家、研究目的；学生或博士后还需要 supervisor information。
+
+如果不申请处理后的 UniMM-HAR，就需要自行下载三个源数据集并运行脚本：
+
+```bash
+python dataset/makecsv/RadHAR2csv.py
+python dataset/makecsv/mRI2csv.py
+python dataset/makecsv/MMFI2csv.py
+python dataset/makenpz/makenpz.py
+python dataset/makenpz/makenpz_normal.py
+```
+
+因此完整复现成本不低：不仅要拿到 RadHAR、mRI、MM-Fi，还要处理动作对齐、滑窗/分段、CSV/NPZ 格式转换、归一化和 C-Sub/C-Set 划分。
 
 ### 数据集处理与协议
 
@@ -245,4 +266,3 @@ Doppler 只测量雷达视线方向的径向速度，不等于完整 3D 速度�
 
 - arXiv: arXiv:2605.09604
 - GitHub: https://github.com/jolin830/DAP-Net
-
