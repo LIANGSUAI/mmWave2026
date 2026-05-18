@@ -2,7 +2,6 @@
 
 ### 📇 元数据 (Metadata)
 
-- **重点标记：** ⭐ 用户指定重点阅读论文
 - **论文全称：** Toward Continuous and Contactless Cardiac Monitoring: A State-Space Approach With FMCW Radar
 - **标题翻译：** 连续非接触式心脏监测：基于 FMCW 雷达的状态空间方法
 - **作者：** Xuelin Kong, Wenren Zhou, Bo Wang, Yong-Xin Guo
@@ -12,7 +11,6 @@
 - **DOI：** 10.1109/TIM.2025.3650236
 - **IEEE Xplore 文章号：** 11322590
 - **URL：** https://doi.org/10.1109/TIM.2025.3650236
-- **阅读状态：** 待读原文
 
 ### 一句话总结
 
