@@ -38,6 +38,8 @@
 - **训练范式：** 先用大规模数据训练通用模型，再 fine-tune 到不同任务和场景。
 - **关键结论：** 使用 raw radar data 显著优于广泛使用的有损表示，效果相当于增加 10x 训练数据。
 
+![[GRT架构图.png]]
+
 ### 数据与任务
 
 - **数据规模：** 1M samples，约 29 hours。
@@ -124,4 +126,3 @@
 - CVF OpenAccess: https://openaccess.thecvf.com/content/ICCV2025/html/Huang_Towards_Foundational_Models_for_Single-Chip_Radar_ICCV_2025_paper.html
 - arXiv: https://arxiv.org/abs/2509.12482
 - DOI: https://doi.org/10.48550/arXiv.2509.12482
-

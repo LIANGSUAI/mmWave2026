@@ -22,12 +22,25 @@
 论文的分类任务不是预测具体情绪类别，而是分别对这三个维度做二分类：SAM 分数 `>5` 记为 High，`<5` 记为 Low，`=5` 的中性样本不参与该维度分类。
 
 ## 🛠️ 毫米波信号处理 Pipeline
+
+![[mmEmotion实验设置图.png]]
+
 1. **原始数据获取**: TI IWR6843ISK-ODS (60-64 GHz), 12个虚拟通道。
 2. **Range-FFT**: 提取目标距离。
 3. **MTI (Moving Target Indication)**: 使用均值相消法抑制静态杂波。
 4. **多距离单元相位融合**: 选取能量最高的5个 range bins 进行加权相位展开 (Phase Unwrapping)，提升鲁棒性。
 5. **滤波分离**: 0.1-0.5 Hz (呼吸) / 1.0-1.8 Hz (心跳)。
 6. **特征提取**: 时频域特征、Hilbert-Huang 变换 (HHT) 分解、以及 HRV 相关特征。
+
+![[mmEmotion处理后信号示例.png]]
+
+## 🧪 实验流程
+
+![[mmEmotion实验流程图.png]]
+
+- 每名被试先进行 baseline recording。
+- 每个 trial 开始前呈现 10 s fixation cross，随后观看电影片段。
+- 每个片段后进行 self-assessment，使用 SAM 量表记录 Valence、Arousal、Dominance 三个维度。
 
 ## 🔁 复现记录
 

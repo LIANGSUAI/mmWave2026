@@ -87,6 +87,8 @@ DAP-Net 由三个关键部分组成：
 2. **Point Cloud Backbone**
 3. **TAM：Text Alignment Module**
 
+![[DAP-Net架构图.png]]
+
 整体流程：
 
 ```text
