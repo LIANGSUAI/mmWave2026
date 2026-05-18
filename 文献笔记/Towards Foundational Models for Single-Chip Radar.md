@@ -10,12 +10,12 @@
 - **页码：** 24655-24665
 - **DOI / arXiv：** 10.48550/arXiv.2509.12482 / arXiv:2509.12482
 - **URL：** https://openaccess.thecvf.com/content/ICCV2025/html/Huang_Towards_Foundational_Models_for_Single-Chip_Radar_ICCV_2025_paper.html
-- **论文级别：** ICCV 2025，计算机视觉顶会，适合作为毫米波雷达基础模型方向的重点论文。
 - **阅读状态：** 初读笔记，待读全文精读
 
 ### 一句话总结
 
 这篇论文收集了 1M samples / 29 hours 的大规模 raw single-chip mmWave radar 数据，训练 Generalizable Radar Transformer (GRT)，证明单芯片雷达在足够数据和合适模型下可以做 3D occupancy、semantic segmentation 等更通用的 4D 感知任务，是“雷达基础模型”方向的代表性工作。
+
 
 ### 研究背景与动机
 
