@@ -7,7 +7,6 @@
 - **数据集 DOI:** https://doi.org/10.57760/sciencedb.09520
 - **版本:** V4
 - **发布平台:** Science Data Bank
-- **引用日期:** 2026-05-12
 - **关联论文:** JIN Biao, SUN Kangsheng, WU Hao, et al. 3D point cloud from millimeter-wave radar for human action recognition: dataset and method. Journal of Radars, 2025, 14(1): 73-89.
 - **论文 DOI:** https://doi.org/10.12000/JR24195
 - **数据类型:** 毫米波雷达 3D 点云人体动作数据集。
