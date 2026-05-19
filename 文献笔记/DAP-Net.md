@@ -210,16 +210,16 @@ DAP-Net 在 C-Sub 和 C-Set 都最高，尤其说明它在异构跨源场景下�
 
 #### Table 6：DSQ 与 TMPD 设计消融
 
-| Backbone | Points Split | Fast Branch Densification | Acc (%) |
-|---|---|---|---:|
-| PointMLP | - | - | 71.06 |
-| PointMLP | 0.2 quantile | MLP densification | 71.00 ↓0.06 |
-| PointMLP | 0.2 quantile | r-fold duplication | 76.46 ↑5.40 |
-| PointMLP | DSQ | r-fold duplication | 76.97 ↑5.91 |
-| UST-SSM | - | - | 71.50 |
-| UST-SSM | 0.2 quantile | MLP densification | 71.40 ↓0.10 |
-| UST-SSM | 0.2 quantile | r-fold duplication | 73.40 ↑1.90 |
-| UST-SSM | DSQ | r-fold duplication | 74.00 ↑2.50 |
+| Backbone | Points Split | Fast Branch Densification |     Acc (%) |
+| -------- | ------------ | ------------------------- | ----------: |
+| PointMLP | -            | -                         |       71.06 |
+| PointMLP | 0.2 quantile | MLP densification         | 71.00 ↓0.06 |
+| PointMLP | 0.2 quantile | r-fold duplication        | 76.46 ↑5.40 |
+| PointMLP | DSQ          | r-fold duplication        | 76.97 ↑5.91 |
+| UST-SSM  | -            | -                         |       71.50 |
+| UST-SSM  | 0.2 quantile | MLP densification         | 71.40 ↓0.10 |
+| UST-SSM  | 0.2 quantile | r-fold duplication        | 73.40 ↑1.90 |
+| UST-SSM  | DSQ          | r-fold duplication        | 74.00 ↑2.50 |
 
 结论：论文选择重复增密而不是 MLP 生成新点，是一个很关键的设计。MLP densification 可能会引入伪结构或噪声；基于 Doppler 的 fast points 重复采样更保守，也更稳定。
 
@@ -323,7 +323,7 @@ Doppler 只测量雷达视线方向的径向速度，不等于完整 3D 速度�
 
 ### 对我现在阶段的价值
 
-- 如果继续看毫米波点云 HAR，DAP 是很好的下一篇：它不是简单追求某个数据集准确率，而是引入了真实部署中的 cross-source generalization 问题。
+- 它不是简单追求某个数据集准确率，而是引入了真实部署中的 cross-source generalization 问题。
 - 它能帮助我从“模型结构”转向“数据分布和设备差异”的视角。
 - UniMM-HAR 值得单独关注，后续如果做点云/图网络/密度分析相关实验，可以作为更现实的 benchmark。
 
