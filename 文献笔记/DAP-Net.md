@@ -153,51 +153,157 @@ TAM 使用文本语义作为稳定锚点，把毫米波全局特征对齐到预�
 
 ### 实验结果
 
-**SOTA 对比**
+#### Table 3：UniMM-HAR 上与已有方法对比
 
-| Model           |     C-Sub |     C-Set |
-| --------------- | --------: | --------: |
-| PointNet        |     59.27 |     70.96 |
-| DGCNN           |     71.70 |     52.18 |
-| RadHAR          |     42.49 |     48.47 |
-| PointMLP        |     71.06 |     78.13 |
-| PST-Transformer |     63.13 |     79.70 |
-| FastHAR         |     53.72 |     61.16 |
-| 3DInAction      |     73.43 |     57.81 |
-| UST-SSM         |     71.50 |     48.40 |
-| **DAP-Net**     | **80.72** | **81.82** |
+说明：Original PC Type 表示原方法面向的点云类型。MPC = mmWave radar point clouds，SPC = static point clouds，TPC = temporal point clouds。
+
+| Model | Source | Original PC Type | C-Sub (%) | C-Set (%) |
+|---|---|---|---:|---:|
+| PointNet | CVPR'17 | SPC | 59.27 | 70.96 |
+| DGCNN | NN'18 | SPC | 71.70 | 52.18 |
+| RadHAR | mmNSS'19 | MPC | 42.49 | 48.47 |
+| PointMLP | ICLR'22 | SPC | 71.06 | 78.13 |
+| PST-Transformer | TPAMI'22 | TPC | 63.13 | 79.70 |
+| PointCLIP | CVPR'22 | SPC | 67.82 | 69.82 |
+| Clip2point | ICCV'23 | SPC | 64.17 | 59.56 |
+| FastHAR | CIKM'24 | MPC | 53.72 | 61.16 |
+| 3DInAction | CVPR'24 | TPC | 73.43 | 57.81 |
+| UST-SSM | ICCV'25 | TPC | 71.50 | 48.40 |
+| **DAP-Net** | - | MPC | **80.72** | **81.82** |
 
 DAP-Net 在 C-Sub 和 C-Set 都最高，尤其说明它在异构跨源场景下比普通点云 backbone 和已有毫米波 HAR 方法更稳。
 
+#### Table 4：D2R 与 TAM 对不同 backbone 的影响
+
+| Backbone | Module | Acc (%) |
+|---|---|---:|
+| PointMLP | - | 71.06 |
+| PointMLP | +D2R | 80.00 ↑8.94 |
+| PointMLP | +D2R+TAM | 80.72 ↑9.66 |
+| UST-SSM | - | 71.50 |
+| UST-SSM | +D2R | 74.00 ↑2.50 |
+| UST-SSM | +D2R+TAM | 74.94 ↑3.44 |
+| PST-Transformer | - | 63.13 |
+| PST-Transformer | +D2R | 76.73 ↑13.60 |
+| PST-Transformer | +D2R+TAM | 78.21 ↑15.08 |
+
+主要结论：D2R 是核心增益来源，TAM 有稳定但较小的增益；D2R 对 PointMLP、UST-SSM、PST-Transformer 都有效，说明它更像一个可插拔的 Doppler-aware 前端模块。
+
 ### 消融结果
 
-**模块消融**
+#### Table 5：D2R 子模块消融
 
-| Backbone | Module | Acc |
+| Backbone | DGR | MFR | Acc (%) |
+|---|---:|---:|---:|
+| PointMLP | ✗ | ✗ | 71.06 |
+| PointMLP | ✓ | ✗ | 76.97 ↑5.91 |
+| PointMLP | ✗ | ✓ | 78.76 ↑7.70 |
+| PointMLP | ✓ | ✓ | 80.00 ↑8.94 |
+| UST-SSM | ✗ | ✗ | 71.50 |
+| UST-SSM | ✓ | ✗ | 73.69 ↑2.19 |
+| UST-SSM | ✓ | ✓ | 74.00 ↑2.50 |
+| PST-Transformer | ✗ | ✗ | 63.13 |
+| PST-Transformer | ✓ | ✗ | 72.31 ↑9.18 |
+| PST-Transformer | ✓ | ✓ | 76.73 ↑13.60 |
+
+结论：DGR 和 MFR 都能带来提升，组合后最好。MFR 在 PointMLP 上单独提升更明显，说明运动显著点对通道特征重校准很有效。
+
+#### Table 6：DSQ 与 TMPD 设计消融
+
+| Backbone | Points Split | Fast Branch Densification | Acc (%) |
+|---|---|---|---:|
+| PointMLP | - | - | 71.06 |
+| PointMLP | 0.2 quantile | MLP densification | 71.00 ↓0.06 |
+| PointMLP | 0.2 quantile | r-fold duplication | 76.46 ↑5.40 |
+| PointMLP | DSQ | r-fold duplication | 76.97 ↑5.91 |
+| UST-SSM | - | - | 71.50 |
+| UST-SSM | 0.2 quantile | MLP densification | 71.40 ↓0.10 |
+| UST-SSM | 0.2 quantile | r-fold duplication | 73.40 ↑1.90 |
+| UST-SSM | DSQ | r-fold duplication | 74.00 ↑2.50 |
+
+结论：论文选择重复增密而不是 MLP 生成新点，是一个很关键的设计。MLP densification 可能会引入伪结构或噪声；基于 Doppler 的 fast points 重复采样更保守，也更稳定。
+
+#### Table 7：固定分位数与 DSQ 对比
+
+| Quantile | Split Type | Acc (%) |
 |---|---|---:|
-| PointMLP | baseline | 71.06 |
-| PointMLP | +D2R | 80.00 |
-| PointMLP | +D2R+TAM | 80.72 |
-| PST-Transformer | baseline | 63.13 |
-| PST-Transformer | +D2R | 76.73 |
-| PST-Transformer | +D2R+TAM | 78.21 |
+| - | - | 71.06 |
+| 0.2 | Fixed | 76.46 ↑5.40 |
+| 0.3 | Fixed | 76.55 ↑5.40 |
+| 0.5 | Fixed | 76.14 ↑5.08 |
+| 0.8 | Fixed | 76.12 ↑5.06 |
+| DSQ | Learnable | 76.97 ↑5.91 |
 
-主要结论：
+结论：固定阈值已经说明 Doppler fast points 有用，但 DSQ 的 learnable quantile 最好，更符合“不同设备 Doppler 尺度不一致”的问题设定。注意：原表中 `0.3 Fixed` 的提升写作 ↑5.40，按 76.55 - 71.06 计算应约为 ↑5.49，这里保留原表数值并标记为论文原文。
 
-- D2R 是核心增益来源。
-- TAM 有增益，但幅度较小。
-- D2R 对不同 backbone 都有效，说明它是 plug-and-play。
+#### Table 8：几何增密方法对比
 
-**D2R 子模块**
+| Densification | Acc (%) |
+|---|---:|
+| Repeat Sampling | 71.06 |
+| Super-frame Fusion | 59.72 ↓11.34 |
+| MLP | 43.54 ↓27.52 |
+| DGR | 76.97 ↑5.91 |
 
-- DGR 和 MFR 单独都有提升。
-- DGR + MFR 组合最好。
-- DGR 参数量几乎为 0，MFR 只增加约 0.06M 参数。
+结论：普通 repeat sampling 只是补点，不会突出动作关键区域；super-frame fusion 和 MLP 反而明显下降，说明在毫米波稀疏点云里“生成更多点”不一定有用，关键是围绕 motion-salient points 做有约束的重参数化。
 
-**超参数**
+#### Table 9：TAM 的 prompt 与文本编码器消融
 
-- fast branch 的重复增密因子 `r=5` 最好。
-- `Pgoal=1024` 最好；512 不够，2048 会引入冗余/噪声。
+| Method | Action Text Prompt | Text Encoder | Acc (%) |
+|---|---|---|---:|
+| Baseline | - | - | 80.00 |
+| w/ TAM | `[CLS]` | CLIP | 80.71 ↑0.71 |
+| w/ TAM | `A person performing [CLS]` | CLIP | 80.65 ↑0.65 |
+| w/ TAM | `a mmWave point cloud of a person [CLS]` | SBERT | 80.67 ↑0.67 |
+| w/ TAM | `a mmWave point cloud of a person [CLS]` | CLIP | 80.72 ↑0.72 |
+
+结论：TAM 的提升大约 0.7%，属于小但稳定的增益。prompt 里显式加入 mmWave point cloud 语境略好；CLIP 略优于 SBERT。精读时可以把 TAM 当作补充模块，重点仍应放在 D2R。
+
+### 附录实验结果
+
+#### Table 16：r-fold 重复增密因子
+
+| Method | r-fold | Acc (%) |
+|---|---:|---:|
+| DAP-Net (w/o TAM) | 1 | 78.76 |
+| DAP-Net (w/o TAM) | 5 | 79.99 ↑1.23 |
+| DAP-Net (w/o TAM) | 10 | 79.19 ↑0.43 |
+
+结论：`r=5` 最好。重复太少不能充分强调 fast points，重复太多可能放大冗余和噪声。
+
+#### Table 17：Pgoal 点数设置
+
+| Method | Pgoal | Acc (%) |
+|---|---:|---:|
+| DAP-Net (w/o TAM) | 512 | 79.61 |
+| DAP-Net (w/o TAM) | 1024 | 79.99 |
+| DAP-Net (w/o TAM) | 2048 | 77.55 |
+
+结论：`Pgoal=1024` 最好。512 信息量偏少，2048 可能引入更多重复点和噪声。
+
+#### Table 18：不同 backbone 接入 D2R / TAM 后的参数量与 FLOPs
+
+| Backbone | Params (M) | FLOPs (G) |
+|---|---:|---:|
+| PointMLP | 13.24 | 15.75 |
+| +D2R | 13.30 ↑0.06 | 15.75 ↑0.00 |
+| +D2R+TAM | 14.43 ↑1.19 | 15.84 ↑0.09 |
+| UST-SSM | 9.19 | 2.79 |
+| +D2R | 9.27 ↑0.08 | 2.79 ↑0.00 |
+| +D2R+TAM | 10.03 ↑0.84 | 2.79 ↑0.00 |
+
+结论：D2R 带来的计算和参数开销很小；TAM 主要增加参数量，但 FLOPs 增量也很低。
+
+#### Table 19：DGR 与 MFR 的模块级开销
+
+| Backbone / Module | Params (M) | Params (%) | FLOPs (M) | FLOPs (%) |
+|---|---:|---:|---:|---:|
+| PointMLP / DGR | 0 | 0.000% | 0 | 0.000% |
+| PointMLP / MFR | 0.06 | 0.505% | 2.16 | 0.014% |
+| UST-SSM / DGR | 0 | 0.000% | 0 | 0.000% |
+| UST-SSM / MFR | 0.06 | 0.650% | 0.05 | 0.002% |
+
+结论：DGR 几乎没有额外参数和 FLOPs，因为它主要是基于 Doppler 的分组和重复增密；MFR 的额外开销也很小，因此 D2R 的性价比很高。
 
 ### 论文里对 Doppler 的核心判断
 
