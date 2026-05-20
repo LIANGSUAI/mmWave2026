@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文献笔记/DAP-Net.md",
+                "file": "毫米波 related.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DAP-Net"
+              "title": "毫米波 related"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文献笔记/DAP-Net.md",
+                "file": "毫米波 related.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "DAP-Net 的大纲"
+              "title": "毫米波 related 的大纲"
             }
           },
           {
@@ -196,10 +196,10 @@
   },
   "active": "910319d87b7489ea",
   "lastOpenFiles": [
+    "文献笔记/DAP-Net.md",
     "文献笔记/M4Human.md",
     "文献笔记/mmEmotion.md",
     "文献笔记/Towards Foundational Models for Single-Chip Radar.md",
-    "文献笔记/DAP-Net.md",
     "文献笔记/IFDNet.md",
     "image/DAP-Net架构图.png",
     "image/截屏2026-05-18 15.48.25.png",
