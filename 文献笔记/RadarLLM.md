@@ -11,11 +11,12 @@
 - **arXiv：** 2504.09862
 - **代码/数据集：** https://inowlzy.github.io/RadarLLM/
 - **数据获取状态：** 论文生成了虚拟雷达-文本数据集（从 AMASS/HumanML3D 合成），并采集了真实雷达测试集。主页已公开，代码已提供 GitHub 链接。虚拟数据集基于开源 AMASS 运动序列，可通过物理感知仿真管线生成。
-- **阅读状态：** 已精读，核心关注 VQ-VAE 雷达 Tokenizer 和多任务预训练对齐设计。
 
 ### 一句话总结
 
 这篇论文提出了 RadarLLM，这是首个利用大语言模型（LLM）进行毫米波雷达点云序列语义运动理解的端到端框架。它通过基于 Aggregate VQ-VAE 的运动引导雷达 Tokenizer 将稀疏雷达序列压缩为离散语义 Token，并通过多任务对齐训练使大模型能够直接生成细粒度的自然语言运动描述。
+
+![[radarllm_fig1.png]]
 
 ### 研究痛点与动机
 
@@ -37,6 +38,7 @@
 为了克服配对数据缺乏的瓶颈，论文设计了一个“物理感知虚拟雷达信号合成管线”（Physics-aware virtual radar simulator），从三维人体运动-文本数据集（HumanML3D + AMASS 的 13,308 个 SMPL-X 骨骼运动序列）中合成逼真的雷达信号，构成 **Virtual Radar-Text Dataset**。
 
 #### 1. 虚拟数据生成管线 (Virtual Data Pipeline)
+
 - **中频信号模拟 (IF Signal Simulation)**：
   - 使用射线追踪（Ray Tracing）技术模拟发射与接收天线间的电磁波传播。
   - 为克服传统蒙特卡洛采样的昂贵计算开销，使用**射频自适应采样**（RF adaptive sampling）技术，通过边缘检测将射线集中关注在人体网格区域。
@@ -59,6 +61,8 @@
 
 ### 方法概述：RadarLLM
 
+![[radarllm_fig3.png]]
+
 RadarLLM 主要由两个核心组件组成：
 1. **运动引导雷达 Tokenizer (Motion-Guided Radar Tokenizer / Aggregate VQ-VAE)**：将时空雷达点云序列压缩为离散的运动编码 Token。
 2. **雷达感知语言模型 (Radar-Aware Language Model)**：基于修改后的 T5 模型，利用多任务预训练和指令微调实现雷达 Token 与文本语义的融合对齐。
@@ -77,6 +81,8 @@ RadarLLM 主要由两个核心组件组成：
 ---
 
 ### 核心模块 1：Motion-Guided Radar Tokenizer (Aggregate VQ-VAE)
+
+![[radarllm_fig4.png]]
 
 旨在将空间稀疏且带有噪声的雷达点云序列 $P_{1:T}$ 压缩为 LLM 可接受的离散语义 Token 序列 $s_{1:L}$（其中 $L = T/r$ 为降采样帧数，且 $r$ 为时间压缩率）：
 
