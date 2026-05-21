@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文献笔记/DAP-Net.md",
+                "file": "文献笔记/RadarLLM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DAP-Net"
+              "title": "RadarLLM"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文献笔记/DAP-Net.md",
+                "file": "文献笔记/RadarLLM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "DAP-Net 的大纲"
+              "title": "RadarLLM 的大纲"
             }
           },
           {
@@ -196,6 +196,7 @@
   },
   "active": "910319d87b7489ea",
   "lastOpenFiles": [
+    "文献笔记/DAP-Net.md",
     "文献笔记/RadarLLM.md",
     "image/radarllm_fig4.png",
     "image/radarllm_fig3.png",
@@ -219,7 +220,6 @@
     "image/radarllm_page_6_150.jp2",
     "文献笔记/Towards Foundational Models for Single-Chip Radar.md",
     "文献笔记/模板.md",
-    "文献笔记/DAP-Net.md",
     "毫米波 related.md",
     "文献笔记/M4Human.md",
     "文献笔记/mmEmotion.md",
