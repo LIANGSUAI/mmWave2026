@@ -2,7 +2,6 @@
 
 ### 📇 元数据 (Metadata)
 
-- **重点标记：** ⭐ 用户指定重点阅读论文
 - **论文全称：** IFDNet: Fall Detection via Millimeter-Wave Radar with Spatio-Temporal Fusion and Adaptive Semi-Supervised Learning
 - **标题翻译：** IFDNet：基于毫米波雷达时空融合与自适应半监督学习的跌倒检测
 - **作者：** Pengkai Sang, Siyuan Ding, Lingxue Liu, Shiqi Wu, Honghao Qin, Xiaoxiang Cao, Xuan Wang, Yuan Zhuang, Yulin Hu
