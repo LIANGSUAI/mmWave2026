@@ -196,6 +196,8 @@
   },
   "active": "910319d87b7489ea",
   "lastOpenFiles": [
+    "01_Papers/DIHARNet_A_Temporal-Doppler-Spatial_domain_Fusion_Method_for_Direction_Insensitive_Human_Activity_Recognition_based_on_MMWave_Radar.pdf",
+    "01_Papers/未确认 900121.crdownload",
     "文献笔记/模板.md",
     "文献笔记/未命名.md",
     "文献笔记/Star Graph + DDGNN.md",
@@ -234,13 +236,11 @@
     "image/radarllm_page_6_157.jp2",
     "image/radarllm_page_6_155.jp2",
     "image/radarllm_page_6_152.jp2",
-    "image/radarllm_page_6_150.jp2",
     "毫米波 related.md",
     "数据集/M4Human.md",
     "数据集/mmWave-3DPCHM-1.0.md",
     "毫米波数据集整理.md",
     "数据集/mmFall.md",
-    "数据集/MiliPoint.md",
-    "数据集/AMASS.md"
+    "数据集/MiliPoint.md"
   ]
 }
