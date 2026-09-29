@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文献笔记/模板.md",
+                "file": "文献笔记/Lightweight-Low-Rank-Spatio-Temporal-Fusion-mmWave-AHAR.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "模板"
+              "title": "Lightweight-Low-Rank-Spatio-Temporal-Fusion-mmWave-AHAR"
             }
           }
         ]
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文献笔记/模板.md",
+                "file": "文献笔记/Lightweight-Low-Rank-Spatio-Temporal-Fusion-mmWave-AHAR.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -198,8 +198,10 @@
   },
   "active": "910319d87b7489ea",
   "lastOpenFiles": [
-    "文献笔记/RadMamba.md",
     "文献笔记/模板.md",
+    "01_Papers/Lightweight-Low-Rank-Spatio-Temporal-Fusion-mmWave-AHAR.md",
+    "文献笔记/Lightweight-Low-Rank-Spatio-Temporal-Fusion-mmWave-AHAR.md",
+    "文献笔记/RadMamba.md",
     "文献笔记/DIHARNET.md",
     "01_Papers/DIHARNet_A_Temporal-Doppler-Spatial_domain_Fusion_Method_for_Direction_Insensitive_Human_Activity_Recognition_based_on_MMWave_Radar.pdf",
     "01_Papers/未确认 900121.crdownload",
@@ -241,7 +243,6 @@
     "数据集/M4Human.md",
     "数据集/mmWave-3DPCHM-1.0.md",
     "毫米波数据集整理.md",
-    "数据集/mmFall.md",
-    "数据集/MiliPoint.md"
+    "数据集/mmFall.md"
   ]
 }
